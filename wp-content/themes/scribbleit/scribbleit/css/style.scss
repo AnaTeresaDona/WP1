@@ -1,0 +1,211 @@
+/*----------------------------------------------------------------*/
+/* - Variables
+/*-----------------------------------------------------------------*/
+ 
+$orange: #e7450d;
+$black: #525252;
+
+/*--------------------------------------------------------*/
+/* - General styles
+/*---------------------------------------------------------*/
+ 
+body {
+  background-color: #f5eeee;    
+  }
+   
+  a:hover {
+  color: $orange;    
+  }
+   
+  a:visited {
+  color: inherit;    
+  }
+
+.button {
+  color: $orange;
+  text-decoration: none;
+  border:1px solid $orange;
+  padding: 12px 30px;
+  text-transform: uppercase;
+  font-size: 15px;
+  transition:0.3s ease all;
+    &amp;:hover {
+    background-color: $orange;
+    color: #fff;
+    }
+  }
+
+/*---------------------------------------------------------*/
+/* - Typography
+/*---------------------------------------------------------*/
+ 
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Roboto Slab', serif;      
+  color: $black;
+  }
+   
+  body, p, li {
+  font-family: 'Roboto', sans-serif;          
+  font-size: 18px;
+  line-height:1.6em;
+  color: $black;
+  }
+
+/*------------------------------------------------*/
+/* - Header
+/*-------------------------------------------------*/
+
+#masthead {
+  background-color: #313131;
+  padding: 20px 0;
+}
+
+
+ /*-----------------------------------------------------------------------------------*/
+/* - Primary menu
+/*-----------------------------------------------------------------------------------*/
+
+#primary-menu {
+display:flex;
+justify-content: flex-end;
+    li {
+    padding: 0 30px;
+    &:last-child {
+    padding-right: 0;    
+    }
+        a {
+        font-family: 'Roboto Slab', serif;  
+        color: white;
+        font-size: 17px;
+        transition: 0.3s ease all;
+            &:hover {
+            color: $orange;    
+            }
+        }
+    }
+}
+
+/*-----------------------------------------------------*/
+/* - Blog excerpts
+/*------------------------------------------------------*/
+
+.post {
+background-color: #fff;  
+padding: 30px;
+border:1px solid #dddddd;
+position: relative;
+    .entry-title a {
+    color: $black;
+    text-decoration: none;
+        &:hover {
+        color: $orange;    
+        }
+    }
+}
+
+.entry-meta {
+color: #adadad;
+text-transform: uppercase;
+text-decoration: none;
+font-size: 15px;
+margin-top: -10px;
+    a {
+    color: #adadad;    
+    text-decoration: none;
+    }
+    .posted-on {
+    margin-right: 10px;
+    padding-right: 10px;
+    border-right:1px solid #adadad;
+    }
+    .fas, .fa {
+    margin-right: 5px;    
+    }
+}
+
+.cat-links {
+position: absolute;
+right: 10px;
+bottom: 5px;
+color: $orange;
+font-size: 15px;
+    a {
+    color: $orange;
+    font-size: 15px;
+    text-decoration: underline;
+    }
+}
+
+.main-content-row {
+    margin-top: 60px;
+    }
+  
+  /*-----------------------------------------------------------*/
+  /* - The sidebar
+  /*------------------------------------------------------------*/
+  
+  #secondary .widget {
+  background-color: #fff;
+  border:1px solid #ddd;
+  padding: 20px;
+      .widget-title {
+      text-align: center;    
+      }
+      ul {
+      padding-left: 0;
+      margin-left: 0;
+      list-style: none;
+          li {
+          border-bottom:1px solid #dcdcdc;
+          padding: 6px 0;
+              &amp;:last-child {
+              border-bottom:none;    
+              }
+              a {
+              color: $black;
+              text-decoration: none;
+              transition:0.3s ease all;
+                  &amp;:hover {
+                  color: $orange;    
+                  }
+              }    
+          }
+          
+      }
+
+.main-content-row {
+  margin-top: 60px;
+  }
+
+/*-----------------------------------------------------------*/
+/* - The sidebar
+/*------------------------------------------------------------*/
+
+#secondary .widget {
+background-color: #fff;
+border:1px solid #ddd;
+padding: 20px;
+    .widget-title {
+    text-align: center;    
+    }
+    ul {
+    padding-left: 0;
+    margin-left: 0;
+    list-style: none;
+        li {
+        border-bottom:1px solid #dcdcdc;
+        padding: 6px 0;
+            &amp;:last-child {
+            border-bottom:none;    
+            }
+            a {
+            color: $black;
+            text-decoration: none;
+            transition:0.3s ease all;
+                &amp;:hover {
+                color: $orange;    
+                }
+            }    
+        }
+        
+    }
