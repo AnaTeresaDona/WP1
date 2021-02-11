@@ -159,8 +159,8 @@ function scribbleit_scripts() {
 	}
 
 	//CSS
-	wp_enqueue_style( 'bootstrap', get_stylesheet_directory_uri() . '/css/bootstrap-grid.min.css');
-	wp_enqueue_style( 'my-styles', get_stylesheet_directory_uri() . '/css/style.css'); 
+	wp_enqueue_style( 'bootstrap', get_stylesheet_directory_uri() . '/sass/bootstrap-grid.min.css');
+	wp_enqueue_style( 'my-styles', get_stylesheet_directory_uri() . '/sass/style.css'); 
 
 	//    Google fonts
 	wp_enqueue_style( 'google-fonts', 'https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap', false );

@@ -29,11 +29,12 @@ body {
   text-transform: uppercase;
   font-size: 15px;
   transition:0.3s ease all;
-    &amp;:hover {
+    &:hover {
     background-color: $orange;
     color: #fff;
     }
   }
+
 
 /*---------------------------------------------------------*/
 /* - Typography
@@ -139,48 +140,11 @@ font-size: 15px;
 .main-content-row {
     margin-top: 60px;
     }
-  
-  /*-----------------------------------------------------------*/
-  /* - The sidebar
-  /*------------------------------------------------------------*/
-  
-  #secondary .widget {
-  background-color: #fff;
-  border:1px solid #ddd;
-  padding: 20px;
-      .widget-title {
-      text-align: center;    
-      }
-      ul {
-      padding-left: 0;
-      margin-left: 0;
-      list-style: none;
-          li {
-          border-bottom:1px solid #dcdcdc;
-          padding: 6px 0;
-              &amp;:last-child {
-              border-bottom:none;    
-              }
-              a {
-              color: $black;
-              text-decoration: none;
-              transition:0.3s ease all;
-                  &amp;:hover {
-                  color: $orange;    
-                  }
-              }    
-          }
-          
-      }
-
-.main-content-row {
-  margin-top: 60px;
-  }
 
 /*-----------------------------------------------------------*/
 /* - The sidebar
 /*------------------------------------------------------------*/
-
+ 
 #secondary .widget {
 background-color: #fff;
 border:1px solid #ddd;
@@ -195,17 +159,166 @@ padding: 20px;
         li {
         border-bottom:1px solid #dcdcdc;
         padding: 6px 0;
-            &amp;:last-child {
+            &:last-child {
             border-bottom:none;    
             }
             a {
             color: $black;
             text-decoration: none;
             transition:0.3s ease all;
-                &amp;:hover {
+                &:hover {
                 color: $orange;    
                 }
             }    
         }
         
     }
+}
+
+/*----------------------------------------------------------------*/
+/* - Footer
+/*-----------------------------------------------------------------*/
+ 
+.site-footer {
+background-color: #313131;   
+margin-top: 80px;
+padding-top: 20px;
+border-top:8px solid #ccc;
+    .widget-title {
+    color: #eee;
+    font-size: 22px;
+    border-bottom:1px solid #4a4a4a;
+    padding-bottom: 10px;
+    }
+    p {
+    color: #adadad;    
+    }    
+    ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    color: #adadad;  
+        li {
+        color: #adadad;  
+        border-bottom:1px solid #4a4a4a;
+        padding: 4px 0;
+            &:last-child {
+            border-bottom:none;    
+            }
+        }
+        a {
+        color: #adadad;  
+        text-decoration: none;
+        transition:0.3s ease all;
+            &:hover {
+            color: $orange;    
+            }
+        }
+    }
+}
+
+.nav-links {
+margin: 40px 0;
+    .nav-previous a, .nav-next a{
+    background-color: #fff;
+    border:1px solid #ddd;
+    padding: 15px 40px;
+    display: inline-block;
+    text-decoration: none;
+    color: $black;
+    transition:0.3s ease all;
+    font-size: 15px;
+        &:hover {
+        background-color: $orange;  
+        color: #fff;
+        }
+        .fa-angle-left {
+        margin-right: 5px;    
+        }
+        .fa-angle-right {
+        margin-left: 5px;    
+        }
+    }
+}
+
+#comments {
+    ol {
+    list-style: none;    
+    }
+    .comment-metadata {
+    font-size: 12px;    
+        a {
+        text-decoration: none;
+        color: #828282;
+        }
+        .edit-link {
+        margin-top: -5px;    
+        }
+    }
+    .comment-body {
+    margin-bottom: 20px;
+    padding-bottom: 20px;  
+    padding: 20px;
+    background-color: #f5eeee;
+    }
+    .says {
+    display: none;    
+    }
+    .comment-reply-link {
+    font-size: 12px;
+    padding: 0px 22px;
+    display: inline-block;
+    color: $black;
+    text-decoration: none;
+    margin: 0;
+    line-height:2em;
+    transition:0.3s ease all;
+    background-color: $orange;
+    color: #fff;
+        &:hover {
+        background-color: $orange;
+        color: white;
+        }
+    }
+    .comments-title {
+    text-align: center;
+    margin-bottom: 30px;    
+    }
+    #comment {
+    padding: 5px;    
+    }
+    .children {
+    list-style: none;    
+    }
+    .comment-list {
+    padding-left: 0;    
+    margin-left: 0;
+    }
+    #respond {
+        #submit {
+        border: 1px solid $orange;
+        border-radius: 0px; 
+        background-color:transparent;
+        font-size: 13px;
+        line-height: 1;
+        padding: 15px 25px;  
+        margin-top: -10px;
+        transition:0.3s ease all;
+        color: $orange;
+            &:hover {
+            background-color: $orange;
+            color: #fff;
+            }
+        }
+    }    
+}
+
+/*--------------------------------------------------------*/
+/* - Page
+/*---------------------------------------------------------*/
+ 
+.type-page {
+background-color: #fff;  
+padding: 30px;
+border:1px solid #dddddd;    
+}
